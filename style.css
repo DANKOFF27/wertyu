@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.botik{
+    width: 450px;
+    height: 600px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.botik:hover .golova{
+    transform: translateY(20px);
+}
+.golova{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+    position: relative;
+    box-shadow: 0 10px 10px #000;
+    
+}
+.shlapa{
+    width: 100px;
+    height: 30px;
+}
+.golova::after{
+    content: '';
+    position: absolute;
+    transition: 0.5s;
+}
+.golova:hover:after{
+    width: 30px;
+    height: 20px;
+    border-radius: 0 0 100px 100px;
+    background-color: rgb(255, 255, 255);
+    bottom: 10px;
+}
+.ochi{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 2px;
+}
+.glaz{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px 50px 10px 10px;
+    position: relative;
+    margin: 0 10px;
+}
+.nis{
+    height: 30px;
+    width: 10px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+.nis:hover{
+    transform: scale(0.7);
+    background-color: chocolate;
+}
+.rot{
+    margin-top: 10px;
+    height: 10px;
+    width: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px 10px;
+    transition: 0.5s;
+}
+.rot:hover{
+    transform: rotate(30deg);
+    background-color: crimson;
+}
+.tilo{
+    display: flex;
+    align-items: center;
+}
+.left{
+    width: 100px;
+    height: 20px;
+    background-color: rgb(255, 0, 183);
+    border-radius: 30%;
+    margin-bottom: 40px;
+    transition: 0.5s;
+    position: relative;
+    box-shadow: 0 10px 10px #000;
+}
+.left:hover{
+    transform: translateY(-10px) rotate(30deg) scale(0.6);
+    background-color: darkmagenta;
+}
+.left::after{
+    content: '';
+    position: absolute;
+    transition: 0.5s;
+}
+.left:hover::after{
+    width: 20px;
+    height: 300px;
+    background-color: rgb(70, 68, 56);
+}
+.puzo{
+    width: 100px;
+    height: 200px;
+    background-color: chartreuse;
+    border-radius: 40%;
+    transition: 0.5s;
+    box-shadow: 0 10px 10px #000;
+}
+.puzo:hover{
+    transform: scale(1.1);
+    background-color: hotpink;
+}
+.right{
+    width: 100px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 30%;
+    margin-bottom: 40px;
+    transition: 0.5s;
+    box-shadow: 0 10px 10px #000;
+}
+.right:hover{
+    transform: translateY(10px) rotate(30deg) scale(1.4);
+    background-color: darkgray;
+}
+.nogu{
+    display: flex;
+}
+.left-noga{
+    width: 20px;
+    height: 130px;
+    background-color: darkgoldenrod;
+    border-radius: 30%;
+    margin-right: 10px;
+    transition: 0.5s;
+    box-shadow: 0 10px 10px #000;
+}
+.left-noga:hover{
+    transform: scale(0.7) translateY(-20px) translateX(-20px) rotate(20deg);
+    background-color: cadetblue;
+}
+.right-noga{
+    width: 20px;
+    height: 130px;
+    background-color: rgb(255, 100, 100);
+    border-radius: 30%;
+    transition: 0.5s;
+    box-shadow: 0 10px 10px #000;
+}
+.right-noga:hover{
+    transform: scale(1.6) translateY(20px) translateX(20px) rotate(-20deg);
+}
+.glaz::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    bottom: 5px;
+    left: 10px;
+    transition: 0.5s;
+}
+.glaz:hover::after{
+    transform: translateY(-10px) scale(1.4) translatex(5px);
+    background-color: aqua;
+}
